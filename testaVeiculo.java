@@ -1,8 +1,4 @@
 import java.util.Scanner; // classe scanner para input
-import java.util.Iterator;
-import java.util.ArrayList;
-
-
 
 public class testaVeiculo {
     public static void main(String[] args) {
@@ -24,10 +20,12 @@ public class testaVeiculo {
             numRodas = input.nextInt();
 
             vei.create(new Veiculos(veiculoTipo, consumo, placa, numRodas));
+            vei.create(new Veiculos("moto", 12, 1234, 2));
+            vei.create(new Veiculos("moto", 12, 1234, 2));
 
-            
         }
         vei.read();
+        
     }
 
 }
